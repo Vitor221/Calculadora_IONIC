@@ -1,0 +1,51 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      TAB3 - CALC3 - DEFAULT
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="body" [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">TAB3 - CALC3 - DEFAULT </ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title size="auto"><h2>{{visor}}</h2></ion-card-title>
+    </ion-card-header>
+  </ion-card>
+
+
+  <ion-grid >
+    <ion-row>
+      <ion-button  (click)="entrarComDados(7)" > <ion-col>7</ion-col></ion-button>   
+      <ion-button (click)="entrarComDados(8)"> <ion-col>8</ion-col></ion-button>   
+      <ion-button  (click)="entrarComDados(9)"> <ion-col>9</ion-col></ion-button>   
+      <ion-button  (click)="entrarComOperacao('+')"> <ion-col>+</ion-col></ion-button>   
+    </ion-row>
+    <ion-row>
+      <ion-button (click)="entrarComDados(4)"> <ion-col>4</ion-col></ion-button>   
+      <ion-button (click)="entrarComDados(5)"> <ion-col>5</ion-col></ion-button>   
+      <ion-button (click)="entrarComDados(6)"> <ion-col>6</ion-col></ion-button>   
+      <ion-button  (click)="entrarComOperacao('-')"> <ion-col>-</ion-col></ion-button>   
+    </ion-row>
+    <ion-row>
+      <ion-button (click)="entrarComDados(3)"> <ion-col>3</ion-col></ion-button>   
+      <ion-button (click)="entrarComDados(2)"> <ion-col>2</ion-col></ion-button>   
+      <ion-button  (click)="entrarComDados(1)"> <ion-col>1</ion-col></ion-button>   
+      <ion-button (click)="entrarComOperacao('*')"> <ion-col>*</ion-col></ion-button>   
+    </ion-row>
+    <ion-row>
+      <ion-button  (click)="entrarComDados(0)"> <ion-col>0</ion-col></ion-button>   
+      <ion-button (click)="calcular()"> <ion-col>=</ion-col></ion-button>   
+      <ion-button (click)="limpar()"> <ion-col>C</ion-col></ion-button>   
+      <ion-button (click)="entrarComOperacao('%')"> <ion-col>%</ion-col></ion-button>   
+    </ion-row>
+  </ion-grid>
+
+</ion-content>

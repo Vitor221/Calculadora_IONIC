@@ -1,0 +1,28 @@
+
+
+ion-title {
+    color: rgb(18, 189, 32);
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    line-height: 1.2;
+    letter-spacing: .2rem;
+}
+
+ion-grid {
+    display: table;
+    padding: 0px;
+}
+
+ion-button {
+    padding: auto;
+    margin: 5px;
+    border: none;
+    display: flex;
+    color: gold;
+    width: 50px;
+    
+}
+
+ion-content {
+    background-color: purple;
+}
